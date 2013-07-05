@@ -7,9 +7,9 @@ pt-BR:
   label_close_all_issues: "Fechar"
   label_select_issues_all_working: "Todas Tarefas Em Andamento"
   label_select_issues_my: "Minhas Tarefas"
-  label_select_issues_my_completed: "Minhas tarefas concluídas"
+  label_select_issues_my_completed: "Minhas tarefas concluÃ­das"
   label_select_issues_new: "Todas tarefas novas"
-  label_select_issues_completed: "Todas tarefas concluídas"
+  label_select_issues_completed: "Todas tarefas concluÃ­das"
   label_select_issues_closed: "Todas tarefas fechadas"
   label_select_issues_all: "Todas tarefas"
 
@@ -20,8 +20,8 @@ pt-BR:
   label_group_closed_sprin: "Sprint Fechada"
 
   label_head_issue_status: "Status"
-  label_head_issue_subject: "Título"
-  label_head_issue_assignee: "Atribuída"
+  label_head_issue_subject: "TÃ­tulo"
+  label_head_issue_assignee: "AtribuÃ­da"
   label_head_issue_updated: "Atualizada"
   label_head_issue_est_time: "Tempo Estimado"
   label_head_issue_done: "% Realizada"
@@ -32,12 +32,12 @@ pt-BR:
   label_select_me: "Eu"
   label_board_status_new: "Novas Tarefas"
   label_board_status_inprogress: "Em Andamento"
-  label_board_status_completed: "Concluída"
+  label_board_status_completed: "ConcluÃ­da"
 
   label_board_issue_text_close_issue: "Fechar Tarefa"
   label_board_issue_text_edit_issue: "Editar Tarefa"
   label_board_issue_time: "Tempo Estimado:"
-  label_board_issue_description: "Descrição"
+  label_board_issue_description: "DescriÃ§Ã£o"
   label_board_issue_new_issue: "Nova Tarefa"
   label_board_edit_btn_submit: "Submeter"
   label_board_edit_btn_cancel: "Cancelar"
@@ -46,8 +46,8 @@ pt-BR:
 
   label_tracker: "Tipo"
   label_priority: "Prioridade"
-  label_start_date: "Início"
-  label_end_date: "Término"
+  label_start_date: "InÃ­cio"
+  label_end_date: "TÃ©rmino"
 
   label_sprint: "Sprint"
   label_me: "<< Eu >>"
