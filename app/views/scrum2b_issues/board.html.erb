@@ -8,7 +8,7 @@
       </p>
       <% if !User.current.anonymous? && @id_member.include?(User.current.id)|| User.current.admin%>
         <p class="new_issue ">
-        <i class="icon-plus-sign icon_new_issue"><span class="text_new "><%= l(:label_board_issue_new_issue)%></span></i> 
+        <i class="icon-plus-sign icon_new_issue"><span class="text_new "><%= l(:label_board_issue_new_issue)%></span></i>
         </p>
       <% end %>
       <div class="connectedSortable" id ="<% if !User.current.anonymous? && @id_member.include?(User.current.id)|| User.current.admin%>new<% else %>new_nomember<% end %>" value="status_no_start">
@@ -115,18 +115,18 @@
         dataType : "text",
 
         success : function(){
-        
+
         }
         });
       }
     });
-    
+
     $(".slider-horizontal").each(function() {
       var id = parseInt($(this).parent().attr("value"));
       var slide_value = $(this).attr("value");
       makeSlider(id, slide_value);
     });
-    
+
     $(".progressbar").each(function() {
       var id = parseInt($(this).parent().attr("value"))
       $("#progress"+id).progressbar({
@@ -157,7 +157,7 @@
       $(".description_readmore").hide();
       $("#edit_issue_").hide();
     });
-   
+
     $(".submit_issue").live("click", function(){
       var id_issue = $(this).parent().attr("value");
       if(id_issue != "" ){
@@ -189,14 +189,14 @@
             $("#show_issue_" + id_issue).replaceWith(data.content).show();
             makeSlider(id_issue, slide_value);
             $("#edit_issue_" + id_issue).replaceWith(data.edit_content).hide();
-            editDate(id_issue); 
+            editDate(id_issue);
             form_edit(id_issue);
           }else if(data.result == "create_success"){
             $("#edit_issue_").find(".value_content").val("");
             $("#edit_issue_").hide();
             $("#edit_issue_").after(data.content)
             makeSlider(data.id,0);
-            editDate(data.id); 
+            editDate(data.id);
             form_edit(data.id);
           }
           else{
@@ -205,17 +205,17 @@
         }
       });
     });
-    
-    
+
+
     $(".editing").each(function() {
       var id = $(this).attr("value");
       editDate(id);
-      if( id != ""){ 
+      if( id != ""){
         form_edit(id);
       }
-      
+
     })
-    
+
     $(".readmore").live("click", function(){
       var id = $(this).attr("value");
       $(this).hide();
@@ -223,7 +223,7 @@
       $("#description_readmore_" + id).show();
       $("#description_hide_" + id).hide();
        return false;
-  
+
     });
     $(".hide").live("click", function() {
       var id = $(this).attr("value");
@@ -232,32 +232,32 @@
       $("#description_hide_" + id).show();
       $("#description_readmore_" + id).hide();
        return false;
-  
+
       });
       $( "#date_start_").datepicker();
       $( "#date_end_").datepicker();
       $( "#ate_start_").datepicker("option", "dateFormat", "yy-mm-dd");
       $( "#date_end_").datepicker("option", "dateFormat", "yy-mm-dd");
-      
+
       $(".icon_new_issue").click(function(){
         $("#edit_issue_").show();
         $("#edit_issue_").addClass("board_issue");
       });
-      
-    }); 
+
+    });
     function form_edit(id){
       $("#p_status_" + id).hide();
       $("#p_priority_" + id).hide();
       $("#p_tracker_" + id).hide();
-      $("#p_sprint_" + id).hide(); 
+      $("#p_sprint_" + id).hide();
     }
     function editDate(id){
       $("#new_date_start_" + id).datepicker();
       $("#new_date_end_" + id).datepicker();
       $("#new_date_start_" + id).datepicker("option", "dateFormat", "yy-mm-dd");
-      $("#new_date_end_" + id).datepicker("option", "dateFormat", "yy-mm-dd");  
+      $("#new_date_end_" + id).datepicker("option", "dateFormat", "yy-mm-dd");
     }
-    
+
     function makeSlider(id, slide_value) {
       $("#slider" + id ).slider({
         orientation: "horizontal",

@@ -14,7 +14,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+/*header,*/
 hgroup,
 nav,
 section {
@@ -33,12 +33,16 @@ audio:not([controls]) {
   display: none;
 }
 
+/* Disabled html inherit to use the main theme */
+/*
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+*/
 
+/*
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -49,6 +53,7 @@ a:hover,
 a:active {
   outline: 0;
 }
+*/
 
 sub,
 sup {
@@ -157,6 +162,8 @@ textarea {
           box-sizing: border-box;
 }
 
+/* Disabled body to use the main theme
+/*
 body {
   margin: 0;
   font-size: 14px;
@@ -169,7 +176,7 @@ a {
   color: #0088cc;
   text-decoration: none;
 }
-
+*/
 a:hover {
   color: #005580;
   text-decoration: underline;
@@ -625,6 +632,8 @@ cite {
   color: #468847;
 }
 
+/* Disabled h1, h2, h3, h4. h5 and h6 inherit to use the main theme */
+/*
 h1,
 h2,
 h3,
@@ -690,6 +699,7 @@ h3 small {
 h4 small {
   font-size: 14px;
 }
+*/
 
 .page-header {
   padding-bottom: 9px;
@@ -697,6 +707,7 @@ h4 small {
   border-bottom: 1px solid #eeeeee;
 }
 
+/*
 ul,
 ol {
   padding: 0;
@@ -713,7 +724,7 @@ ol ul {
 li {
   line-height: 20px;
 }
-
+*/
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
@@ -892,10 +903,11 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
+/*
 form {
   margin: 0 0 20px;
 }
+*/
 
 fieldset {
   padding: 0;
@@ -1758,9 +1770,11 @@ input.search-query {
   margin-left: 0;
 }
 
+/*
 .control-group {
   margin-bottom: 10px;
 }
+*/
 
 legend + .control-group {
   margin-top: 20px;
@@ -2132,6 +2146,7 @@ table [class*=span],
 .table-hover tbody tr.info:hover td {
   background-color: #c4e3f3;
 }
+/*
 [class^="icon-"],
 [class*="icon-"] {
   display: inline-block;
@@ -2145,7 +2160,7 @@ table [class*=span],
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
-
+*/
 /* White icons with optional class, or on hover/active states of certain elements */
 
 .icon-white,
